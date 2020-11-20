@@ -4,6 +4,15 @@ import { Redirect } from 'react-router-dom';
 import { AuthService } from '../../services';
 
 export default function Login(){
+
+  const [loginUsuario, setLoginUsuario] = useState('');
+    const [senhaUsuario, setSenhaUsuario] = useState('');
+
+    const handleLogin = () => {
+        const credentials = { loginUsuario, senhaUsuario }
+        AuthService.storeAuthData(credentials)
+    }
+
     return(
         <div>
             <div className="wrapper fadeInDown">
@@ -14,9 +23,9 @@ export default function Login(){
     </div>
 
     <form>
-      <input type="text" id="login" className="fadeIn second" name="login" placeholder="login"/>
-      <input type="text" id="password" className="fadeIn third" name="login" placeholder="password"/>
-      <input type="submit" className="fadeIn fourth" value="Log In"/>
+      <input type="text" id="login" className="fadeIn second" value={loginUsuario} onChange={event => setLoginUsuario(event.target.value)} name="login" placeholder="login"/>
+      <input type="text" id="password" className="fadeIn third" value={senhaUsuario} onChange={event => setSenhaUsuario(event.target.value)} name="login" placeholder="password"/>
+      <input type="submit" onClick={() => handleLogin()} className="fadeIn fourth" value="Log In"/>
     </form>
 
     <div id="formFooter">
