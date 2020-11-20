@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+// import React, { useState } from 'react';
+import React from 'react';
+// import { Redirect } from 'react-router-dom';
 
-import { AuthService } from '../../services';
+// import { AuthService } from '../../services';
 
 
 export default function Login(){
@@ -23,7 +24,7 @@ export default function Login(){
     </form>
 
     <div id="formFooter">
-      <a className="underlineHover" href="#">Forgot Password?</a>
+      <a className="underlineHover" href="/forgot-password">Forgot Password?</a>
     </div>
 
   </div>
