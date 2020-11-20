@@ -3,10 +3,7 @@ import { Redirect } from 'react-router-dom';
 
 import { AuthService } from '../../services';
 
-
 export default function Login(){
-
-
     return(
         <div>
             <div className="wrapper fadeInDown">
@@ -23,7 +20,7 @@ export default function Login(){
     </form>
 
     <div id="formFooter">
-      <a className="underlineHover" href="#">Forgot Password?</a>
+      <a className="underlineHover" href="#">Esqueceu a Senha?</a>
     </div>
 
   </div>

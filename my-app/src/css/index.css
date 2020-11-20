@@ -216,6 +216,37 @@ input[type=text]:placeholder {
   width: 60%; }
 
 .jumbotron-fluid {
-  height: 400px; }
+  height: 600px;
+  background-image: url("../assets/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply; }
+
+.textBanner {
+  color: white;
+  text-align: left; }
+
+.lead {
+  width: 50%; }
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.subImage {
+  margin: 20px; }
+
+.marcas {
+  width: 30%;
+  opacity: 40%;
+  filter: grayscale(100%);
+  text-align: center; }
+
+.marcas:hover {
+  transition: 1s;
+  width: 32%;
+  opacity: 100%;
+  filter: grayscale(0%); }
 
 /*# sourceMappingURL=index.css.map */
