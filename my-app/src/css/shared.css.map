@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,OAAO;EACH,gBAAgB,EAAE,OAAkB",
+"sources": ["../shared/index.scss"],
 "names": [],
 "file": "shared.css"
 }
