@@ -1,8 +1,13 @@
-import Routes from './routes'
+import Routes from './routes';
+import { HeaderComponent } from './shared';
+
 
 function App(){
   return (
-    <Routes/>
+    <>
+      <HeaderComponent/>
+      <Routes/>
+    </>
   );
 }
 export default App;
