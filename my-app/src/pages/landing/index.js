@@ -51,27 +51,24 @@ return(
                         <li><p>Muitos restaurantes não incluem imagens nos cardápios porque é caro fotos imagens de alta qualidade em papel. </p></li>
                         <li><p>Cuide não apenas da saúde dos seus clientes. Seus funcionários também são expostos ao risco de infecção durante o serviço. </p></li>
                     </ul>
-                    <h3 className="title"> Veja os Parceiros: </h3>
-                    <div className="row">
-                        <div className="col-md-4 col-sm-12 marcas">
-                            <img src={McImage} alt='Logo da aplicação' width="30%"/>
-                        </div>
-
-                        <div className="col-md-4 col-sm-12 marcas"> 
-                            <img src={BeatsImage} alt='Logo da aplicação' width="30%"/>
-                        </div>
-
-                        <div className="col-md-4 col-sm-12 marcas"> 
-                            <img src={PespiImage} alt='Logo da aplicação' width="30%" />
-                        </div>
-                    </div>
                 </div>
-                <div className="container">
-
-                    <p>POSSIVEL FORM</p> 
-
-                </div>     
             </div>
-        </div>
+            <div className="row">
+                <div className="col-12">
+                    <h3 className="title"> Veja os Parceiros: </h3>
+                </div>
+                <div className="col-md-4 col-sm-12 marcas">
+                    <img src={McImage} alt='Logo da aplicação' width="30%"/>
+                </div>
+
+                <div className="col-md-4 col-sm-12 marcas"> 
+                    <img src={BeatsImage} alt='Logo da aplicação' width="30%"/>
+                </div>
+
+                <div className="col-md-4 col-sm-12 marcas"> 
+                    <img src={PespiImage} alt='Logo da aplicação' width="30%" />
+                </div>
+            </div>
+        </div>   
     </div>
 )}
