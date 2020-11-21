@@ -13,9 +13,12 @@ export default function HeaderComponent(){
                     <li className="nav-item active">
                         <a className="nav-link" href="#">HOME <span className="sr-only">(current)</span></a>
                     </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/tables">Mesas <span className="sr-only">(current)</span></a>
+                    </li>
                 </ul>
                 <span className="navbar-text">
-                    <a className="navbar-brand" href="#">LOGIN</a>
+                    <a className="navbar-brand" href="/login">LOGIN</a>
                 </span>
             </div>
         </nav>

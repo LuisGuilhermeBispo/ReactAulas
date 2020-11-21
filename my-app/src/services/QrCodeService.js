@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Armazenando o endereço da API
-const apiUrl = "http://localhost:3000"
+const apiUrl = "http://localhost:3200"
 
 const qrCodeService = {
 
@@ -11,8 +11,11 @@ const qrCodeService = {
         return axios.get(enpoint)
     },
 
-    async testData() {
-        return axios.get(apiUrl + '/qrcode/qrcode')
+    async testData(id) {
+        const params = {
+            id: id
+        }
+        return axios.post(apiUrl + '/qrcode/generate', params)
     }
 
     // // Função para recuperar dados de um post específico

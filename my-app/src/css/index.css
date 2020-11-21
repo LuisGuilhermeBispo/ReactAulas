@@ -250,4 +250,49 @@ input[type=text]:placeholder {
   opacity: 100%;
   filter: grayscale(0%); }
 
+.post-card__text img {
+  max-width: 90px;
+  margin-bottom: 15px; }
+
+.post-card {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: center; }
+
+div {
+  background: #f9f9f9; }
+
+.table-product {
+  width: 50%;
+  margin: 0 auto; }
+  .table-product tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: "15px";
+    border: 1px solid #505050;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #fff;
+    cursor: pointer;
+    transition: transform .4s ease; }
+    .table-product tr:hover {
+      transform: scale(1.04); }
+    .table-product tr th,
+    .table-product tr td {
+      text-align: center; }
+    .table-product tr h4 {
+      font-size: 16px;
+      margin: 0; }
+
+.flex {
+  display: flex;
+  align-items: start;
+  margin-top: 50px; }
+  .flex .left,
+  .flex .right {
+    width: 45%; }
+    .flex .left input,
+    .flex .right input {
+      border: 1px solid #505050; }
+
 /*# sourceMappingURL=index.css.map */
